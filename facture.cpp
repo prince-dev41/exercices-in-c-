@@ -19,7 +19,7 @@ int main () {
     cout << "Veillez entrer la quantité commandée : " << endl;
      cin >> quantity;
 
-    if (price == 0 || quantity == 0 ) {
+    if (price < 0 || quantity < 0 ) {
         cout << "Veillez entrer des données valides. Le prix et la quantité doivent etre supérieure à 0. Reesayer avec des données valides. Merci " << endl;
         return 0;
     }
