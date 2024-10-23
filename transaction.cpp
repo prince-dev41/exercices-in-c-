@@ -1,4 +1,4 @@
-// programme en c++ permettant de faire des transactions
+// programme en c++ permettant de simuler des transactions mobiles
 
 #include <iostream>
 using namespace std;
