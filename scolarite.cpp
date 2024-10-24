@@ -1,4 +1,4 @@
-// programme en c++ permettant de calculer la scolarite
+// programme en c++ permettant de calculer la scolarite due par un parent
 
 #include <iostream>
 using namespace std;
