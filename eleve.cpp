@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     // Déclaration des variables
     int effectif, note;
+    float moyenne;
 
     // Saisie de l'effectif
     do {
@@ -33,15 +34,23 @@ int main() {
     // Affichage des résultats
     cout << "--- Résultats ---" << endl;
     for (int i = 0; i < effectif; i++) {
-        int somme_notes = 0;
+        int meilleur_note1 = notes[i][0];
+        int meilleur_note2 = notes[i][1];
 
-        // Calcul de la somme des notes
+        // Trouver les deux meilleures notes
         for (int j = 0; j < 3; j++) {
-            somme_notes += notes[i][j];
+            if (notes[i][j] > meilleur_note1) {
+                meilleur_note2 = meilleur_note1;
+                meilleur_note1 = notes[i][j]; 
+            } else if (notes[i][j] > meilleur_note2) {
+                meilleur_note2 = notes[i][j];
+            }
         }
 
+        // Calcul de la moyenne
+        moyenne = (meilleur_note1 + meilleur_note2) / 2;
+
         // Affichage du nom et de la moyenne
-        float moyenne = (somme_notes) / 3;
         cout << "Nom: " << noms[i] << ", Moyenne: " << moyenne << endl;
     }
 
