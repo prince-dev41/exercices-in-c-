@@ -6,7 +6,7 @@ int main() {
     int effectif, note;
     float moyenne;
 
-    // Saisie de l'effectif
+    // l'effectif
     do {
         cout << "Entrer l'effectif de la salle : ";
         cin >> effectif;
@@ -34,10 +34,10 @@ int main() {
     // Affichage des résultats
     cout << "--- Résultats ---" << endl;
     for (int i = 0; i < effectif; i++) {
-        int meilleur_note1 = notes[i][0];
-        int meilleur_note2 = notes[i][1];
+        float meilleur_note1 = notes[i][0];
+        float meilleur_note2 = notes[i][1];
 
-        // Trouver les deux meilleures notes
+        // meilleures notes
         for (int j = 0; j < 3; j++) {
             if (notes[i][j] > meilleur_note1) {
                 meilleur_note2 = meilleur_note1;
@@ -50,7 +50,6 @@ int main() {
         // Calcul de la moyenne
         moyenne = (meilleur_note1 + meilleur_note2) / 2;
 
-        // Affichage du nom et de la moyenne
         cout << "Nom: " << noms[i] << ", Moyenne: " << moyenne << endl;
     }
 
