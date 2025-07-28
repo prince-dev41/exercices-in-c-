@@ -1,5 +1,4 @@
 
-````markdown
 # 🧠 C++ Practice Exercises – School Assignments
 
 This repository contains a collection of basic to intermediate C++ programs written during my early journey learning the C++ programming language at university.
@@ -72,12 +71,3 @@ Junior Web Developer – React & Next.js
 ## 📜 License
 
 This project is open-source and free to explore. You may use, modify, and learn from the code. Just give credit when appropriate ✨
-
-```
-
----
-
-💡 Tu peux copier ce fichier et le coller dans un fichier `README.md` à la racine de ton dépôt.
-
-Souhaites-tu que je t’aide aussi à créer un logo (ou un header en Markdown avec un visuel) pour le dépôt ?
-```
