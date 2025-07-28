@@ -13,6 +13,7 @@ The repository is organized by individual `.cpp` source files and their compiled
 
 | File Name       | Description                                      |
 |----------------|--------------------------------------------------|
+| `classe.cpp`     | Class management example                       |
 | `hello.cpp`     | Basic "Hello World" example                     |
 | `exo.cpp`       | Simple exercise template                        |
 | `note.cpp`      | Student grading and evaluation logic            |
